@@ -20,7 +20,8 @@
 
 Base URL: `http://localhost:8000/` (or your deployed host)
 
-Swagger documentation is available at root after running the server.
+### 🔸 `GET /docs`
+Interactive API documentation using Swagger UI.
 
 ### 🔸 `GET /search?q=<query>`
 Search for sounds.
@@ -62,7 +63,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-- Access the API (and docs) at `http://localhost:8000/`
+- Access the API at `http://localhost:8000/`
 ---
 
 ## 💖 Support the Developer
