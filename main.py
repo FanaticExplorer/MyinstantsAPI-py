@@ -5,30 +5,10 @@ import re
 import ast
 from json import load
 
-app = FastAPI(
-    title="MyInstants API",
-    description="API for accessing MyInstants sound library with scraping capabilities",
-    version="1.0",
-    docs_url="/",
-    openapi_tags=[
-        {
-            "name": "Sound Discovery",
-            "description": "Endpoints for discovering trending and popular sounds"
-        },
-        {
-            "name": "User Content",
-            "description": "Operations related to user profiles and content"
-        },
-        {
-            "name": "Sound Details",
-            "description": "Get detailed information about specific sounds"
-        },
-        {
-            "name": "Search Operations",
-            "description": "Search sounds across the platform"
-        }
-    ]
-)
+
+with open('api_info.json', 'r', encoding='utf-8') as f:
+    api_info = load(f)
+app = FastAPI(**api_info)
 
 BASE_URL = "https://www.myinstants.com"
 HEADERS = {
@@ -88,6 +68,13 @@ def parse_sounds(html_content: str):
             })
 
     return sounds
+
+@app.get("/")
+async def root():
+    """
+    Root endpoint to check if the API is running.
+    """
+    return {"running": True, "author": "FanaticExplorer", "message": "Go to /docs for API documentation."}
 
 @app.get("/trending",
          tags=["Sound Discovery"],

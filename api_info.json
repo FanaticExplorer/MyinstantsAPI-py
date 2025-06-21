@@ -1,0 +1,33 @@
+{
+    "title": "MyInstants API",
+    "summary": "Unnoficial API for accessing MyInstants sound library with scraping capabilities.",
+    "description": "This API provides endpoints to discover trending sounds, user favorites, sound details, and search operations on [MyInstants](https://www.myinstants.com/). It scrapes the website to retrieve sound data.\n\nOriginally made by [abdipr/myinstants-api](https://github.com/abdipr/myinstants-api); I rewrote it to Python and updated it.\n\nDonations are the only thing that keeps this project alive. Support is more than appreciated! [https://bento.me/fanaticexplorer](https://bento.me/fanaticexplorer)",
+    "version": "1.0",
+    "openapi_tags": [
+        {
+            "name": "Sound Discovery",
+            "description": "Endpoints for discovering trending and popular sounds"
+        },
+        {
+            "name": "User Content",
+            "description": "Operations related to user profiles and content"
+        },
+        {
+            "name": "Sound Details",
+            "description": "Get detailed information about specific sounds"
+        },
+        {
+            "name": "Search Operations",
+            "description": "Search sounds across the platform"
+        }
+    ],
+    "contact": {
+        "name": "FanaticExplorer",
+        "url": "https://github.com/FanaticExplorer",
+        "email": "the.fanatic.explorer@gmail.com"
+    },
+    "license_info": {
+        "name": "MIT License",
+        "url": "https://opensource.org/license/mit/"
+    }
+}
