@@ -1,0 +1,22 @@
+{
+    "listed_instant":
+    {
+         "id": "my-great-instant-sound-123",
+         "title": "My great instant sound",
+         "url": "https://www.myinstants.com/en/instant/my-great-instant-sound-123",
+         "mp3": "https://www.myinstants.com/media/sounds/my-great-instant-sound.mp3"
+    },
+    "detailed_instant":
+    {
+         "id": "my-great-instant-sound-123",
+         "url": "https://www.myinstants.com/en/instant/my-great-instant-sound-123",
+         "title": "My great instant sound",
+         "mp3": "https://www.myinstants.com/media/sounds/my-great-instant-sound.mp3",
+         "description": "I decided to upload this sound because it is cool.",
+         "tags": ["sound", "cool", "funny"],
+         "favorites": 123,
+         "views": 1234567,
+         "uploader": "fanaticexplorer",
+         "uploader_url": "https://www.myinstants.com/en/profile/fanaticexplorer/uploaded/"
+    }
+}
